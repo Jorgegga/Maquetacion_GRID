@@ -1,0 +1,211 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #0AD3F7;
+    font-family: 'Langar', cursive;
+
+}
+
+/* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    width: 80%;
+    grid-template-rows: 10% 60% 30% 20%;
+    grid-template-columns: 10% 20% 20% 30%;
+    grid-gap: 5%;
+    grid-template-areas:
+        "header header header header"
+        "nav main main article"
+        ". articles1 articles2 articles3"
+        "footer footer footer footer";
+
+    color: purple;
+
+    text-align: center;
+    margin: auto;
+}
+
+
+
+/* El menú */
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+/* El elemento principal main*/
+
+main {
+    grid-area: main;
+    border: 1px solid gray;
+    padding: 1vw;
+    border-radius: 20px;
+}
+
+main img {
+    height: 20vw;
+}
+
+/* Artículo. Imágenes pequeñas */
+
+article {
+    grid-area: article;
+    border: 1px solid gray;
+    padding: 1vw;
+    border-radius: 20px;
+}
+
+article img {
+    height: 9vw;
+    border-radius: 20px;
+}
+
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+.articles1 {
+    grid-area: articles1;
+}
+
+.articles1 img {
+    height: 8vw;
+}
+
+.articles2 {
+    grid-area: articles2;
+}
+
+.articles2 img {
+    height: 8vw;
+}
+
+.articles3 {
+    grid-area: articles3;
+}
+
+.articles3 img {
+    height: 8vw;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+footer {
+    display: grid;
+    text-align: center;
+    padding-top: 2%;
+    color: darkslategray;
+    grid-area: footer;
+}
+
+footer address {
+    text-align: left;
+}
+
+.copyright {
+    font-size: 1vw;
+    margin-top: -2%;
+}
+
+.social {
+    font-size: 1.5vw;
+    text-align: right;
+    margin-top: -3%;
+}
