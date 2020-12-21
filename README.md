@@ -1,4 +1,4 @@
-# Maquetacion Flex README
+# Maquetacion GRID README
 * **Descripción del proyecto:**
     Un pequeño proyecto hecho con GRID para la clase de DIWEB
 * **Contenido de la publicación:**
